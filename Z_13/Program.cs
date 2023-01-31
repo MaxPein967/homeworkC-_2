@@ -4,25 +4,26 @@
 
 Console.Clear();
 
-int Number = new Random().Next(1, 2000);
+int n = new Random().Next(1, 2000);
 Console.WriteLine();
-Console.WriteLine($"Число: {Number}");
+Console.WriteLine($"Число: {n}");
 
-if (Number / 100 > 0)
-{
-    if(Number > 999)
-    {
-        Console.WriteLine($"Третьей цифрой числа {Number} является цифра {Number / 10 % 10}");
-    }
-    else
-    {
-        Console.WriteLine($"Третьей цифрой числа {Number} является цифра {Number % 10}");
-    }
-}
-else
-{
-    Console.WriteLine($"У числа {Number} нет третьей цифры");
-}
+Console.WriteLine(n>99 ? n.ToString()[2] : '-');
 
-Console.WriteLine();
+// if (Number / 100 > 0)
+// {
+//     if(Number > 999)
+//     {
+//         Console.WriteLine($"Третьей цифрой числа {Number} является цифра {Number / 10 % 10}");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Третьей цифрой числа {Number} является цифра {Number % 10}");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine($"У числа {Number} нет третьей цифры");
+// }
 
+// Console.WriteLine();
